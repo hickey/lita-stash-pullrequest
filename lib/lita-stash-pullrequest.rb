@@ -5,6 +5,7 @@ Lita.load_locales Dir[File.expand_path(
 )]
 
 require "lita/handlers/stash_pullrequest"
+require "subscriptions"
 
 Lita::Handlers::StashPullrequest.template_root File.expand_path(
   File.join("..", "..", "templates"),
